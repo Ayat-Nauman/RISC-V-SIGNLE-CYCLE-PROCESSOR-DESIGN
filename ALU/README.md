@@ -18,7 +18,7 @@ Supported operations include arithmetic, logic, shifts, and branch comparisons.
 The RTL of this DUT comprises of two files:
 1. ALU.sv
 2. ALU_pkg.sv
-The package file contain enumaration of all the control signals needed in the RTL and test bench files. This improves the readabilty of code.
+* The package file contain enumaration of all the control signals needed in the RTL and test bench files. This improves the readabilty of code.
 ## Testbench
 
 The testbench applies multiple test vectors to verify each ALU operation.
