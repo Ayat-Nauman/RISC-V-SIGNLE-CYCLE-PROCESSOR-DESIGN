@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project implements a 32-bit **ALU** for the RV32I instruction set.
+This project implements a 32-bit **ALU** for the RV32I instruction set using System Verilog.
 The ALU takes two 32-bit inputs (`a` and `b`), a 6-bit control signal, and produces a 32-bit result along with a `zero` flag.
 Supported operations include arithmetic, logic, shifts, and branch comparisons.
 
@@ -14,6 +14,11 @@ Supported operations include arithmetic, logic, shifts, and branch comparisons.
 * `zero` flag output (set when result = 0)
 * Supports ADD, SUB, AND, OR, XOR, SLT, SLTU, SLL, SRL, SRA, and branch comparisons (BEQ, BNE, BGE, BLT, BGEU, BLTU).
 
+# RTL File
+The RTL of this DUT comprises of two files:
+1. ALU.sv
+2. ALU_pkg.sv
+The package file contain enumaration of all the control signals needed in the RTL and test bench files. This improves the readabilty of code.
 ## Testbench
 
 The testbench applies multiple test vectors to verify each ALU operation.
