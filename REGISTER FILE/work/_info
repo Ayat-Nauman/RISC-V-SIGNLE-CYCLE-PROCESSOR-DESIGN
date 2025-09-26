@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/18.1
+vreg_file
+!s110 1758529296
+!i10b 1
+!s100 ]7>P=]81hXACYKlFBH80B0
+IS8Oicc@nDSP9><im[C]F60
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dA:/MODELSIM PROJECTS/REGISTER FILE
+w1758529292
+Z2 8A:/MODELSIM PROJECTS/REGISTER FILE/regfile.v
+Z3 FA:/MODELSIM PROJECTS/REGISTER FILE/regfile.v
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1758529296.000000
+Z5 !s107 A:/MODELSIM PROJECTS/REGISTER FILE/regfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|A:/MODELSIM PROJECTS/REGISTER FILE/regfile.v|
+!i113 1
+o-work work
+Z6 tCvgOpt 0
+vregfile
+Z7 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z8 !s110 1758869881
+!i10b 1
+!s100 XWcOA=9fHNRS67BiojQI53
+I>Hb_WB`E7WDG8BPF>=2=m1
+R0
+!s105 regfile_v_unit
+S1
+R1
+w1758869878
+R2
+R3
+L0 1
+R4
+r1
+!s85 0
+31
+Z9 !s108 1758869881.000000
+R5
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/MODELSIM PROJECTS/REGISTER FILE/regfile.v|
+!i113 1
+Z10 o-work work -sv
+R6
+vregfile_tb
+R7
+R8
+!i10b 1
+!s100 ]EK?lhzR=dE<N1m:56n:m0
+I9W7LdncKH1dELE7n<hf>o1
+R0
+!s105 regfile_tb_v_unit
+S1
+R1
+w1758867425
+8A:/MODELSIM PROJECTS/REGISTER FILE/regfile_tb.v
+FA:/MODELSIM PROJECTS/REGISTER FILE/regfile_tb.v
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 A:/MODELSIM PROJECTS/REGISTER FILE/regfile_tb.v|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|A:/MODELSIM PROJECTS/REGISTER FILE/regfile_tb.v|
+!i113 1
+R10
+R6
