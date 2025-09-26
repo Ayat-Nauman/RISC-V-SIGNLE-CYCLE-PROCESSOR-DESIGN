@@ -60,5 +60,3 @@ Below is the observed waveform (from ModelSim) matching the test sequence:
 <img width="1358" height="574" alt="RegisterFile_output" src="https://github.com/user-attachments/assets/cefbc3ff-8050-4603-af6a-390fff114070" />
 
 ---
-
-Would you like me to also create the **Markdown table for your actual waveform results** (using the values from your screenshot) so you can paste it directly under “Simulation Results”?
