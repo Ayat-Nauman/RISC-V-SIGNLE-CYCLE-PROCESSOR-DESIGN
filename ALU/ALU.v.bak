@@ -1,0 +1,47 @@
+/* RV32i has two 32-bits inputs, a 6 bit ALU control signal
+a 32 bit result, and a single bit zero flag
+*/
+
+module ALU(
+	input [31:0] a,
+	input [31:0] b,
+	input [5:0] ALUop,	
+	output [31:0] result,
+	output zero
+);
+
+// Defining an enumeration for the RISC-V ALU control signals.
+typedef enum {
+    ALU_ADD = 0b011001,  // Addition (add, addi)
+    ALU_SUB = 0b011011,  // Subtraction (sub, beq, bne, blt, bge)
+    ALU_AND = 0b011101,  // Bitwise AND (and, andi)
+    ALU_OR  = 0b011111,  // Bitwise OR (or, ori)
+    ALU_XOR = 0b100001,  // Bitwise XOR (xor, xori)
+    ALU_SLT = 0b100011,  // Set Less Than, signed (slt, slti)
+    ALU_SLTU= 0b100101,  // Set Less Than, unsigned (sltu, sltui)
+    ALU_SLL = 0b100111,  // Shift Left Logical (sll, slli) - multiplication by 2^n
+    ALU_SRL = 0b101001,  // Shift Right Logical (srl, srli) - division by 2^n
+    ALU_SRA = 0b101011  // Shift Right Arithmetic (sra, srai)
+} ALUop;
+
+// Case statements for defining ALU operations
+case (ALUop)
+ALU_ADD : result = a + b; // RV32i follows 2's complement that unifies the hardware logic for signed and unsigned arithmetic
+ALU_SUB : result = a - b; // same goes for subtraction - we need not worry about signed and unsigned in ADD and SUB instructions
+ALU_AND : result = a & b; 
+ALU_OR  : result = a | b;
+ALU_XOR : result = a ^ b;
+ALU_SLT : result = ($signed(a) < $signed(b)) ? 32'd1 : 32'd0; // signed numbers comparison - here type casting is essential
+ALU_SLTU: result = (a < b) ? 32'd1 : 32'd0;
+ALU_SLL : result = a << b; // "L"ess than "L"ess than operators are used for "L"eft "L"ogical
+ALU_SRL : result = a >> b; 
+// Shift Right Arithmetic (SRA)
+// Uses the arithmetic right shift operator `>>>`.
+// The most significant bit (sign bit) is duplicated and shifted in from the left.
+ALU_SRA: result = $signed(a) >>> b;
+
+default : result = 0;
+endcase
+
+assign zero = (result == 0)? 1:0;
+endmodule
