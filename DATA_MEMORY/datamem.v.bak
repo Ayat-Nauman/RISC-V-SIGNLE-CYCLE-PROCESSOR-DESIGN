@@ -1,0 +1,31 @@
+// module name and port listing
+module datamem #( parameter DATA_WIDTH = 8, DEPTH = 16)(
+input   clk,
+input  [31:0]address,
+input  [31:0]memwrite,
+input  [31:0]writedata,
+output [31:0]readdata
+output
+);
+
+// creating data memory
+reg [DATA_WIDTH-1:0]d_mem[DEPTH-1:0];
+
+// initializing the memory with random numbers
+initial begin
+	integer i;
+	for(i=0; i<DEPTH; i=i+1) begin
+		d_mem[i] <= $urandom;
+	end
+end
+
+// Reading operation is independent of clock therefore using assign statement
+assign readdata = {d_mem[address+3], d_mem[address+2], d_mem[address+1], d_mem[address]};
+
+// writing operation is clock dependent
+
+always @(posedge clk) begin
+	if (memwrite) {d_mem[address+3], d_mem[address+2], d_mem[address+1], d_mem[address]} <= writedata;
+end
+
+endmodule

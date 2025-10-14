@@ -1,0 +1,8 @@
+`timescale 1ns/1ns
+
+module datamem_tb;
+reg clk;
+reg [31:0]address;
+reg [31:0]memwrite;
+reg [31:0]writedata;
+wire [31:0]readdata;

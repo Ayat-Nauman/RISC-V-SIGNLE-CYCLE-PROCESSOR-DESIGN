@@ -1,0 +1,15 @@
+{A:/MODELSIM PROJECTS/REGISTER FILE/regfile_tb.v} {1 {vlog -work work -sv -stats=none {A:/MODELSIM PROJECTS/REGISTER FILE/regfile_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regfile_tb
+
+Top level modules:
+	regfile_tb
+
+} {} {}} {A:/MODELSIM PROJECTS/REGISTER FILE/regfile.v} {1 {vlog -work work -sv -stats=none {A:/MODELSIM PROJECTS/REGISTER FILE/regfile.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module regfile
+
+Top level modules:
+	regfile
+
+} {} {}}
