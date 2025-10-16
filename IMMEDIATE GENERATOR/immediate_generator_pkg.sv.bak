@@ -1,0 +1,13 @@
+// Package for RV32I Instruction Formats
+package immediate_generator_pkg;
+
+    typedef enum logic [2:0] {
+        R_TYPE = 3'b000,   // Register type (ADD, SUB, AND, OR, etc.)
+        I_TYPE = 3'b001,   // Immediate type (ADDI, LW, JALR, etc.)
+        S_TYPE = 3'b010,   // Store type (SB, SH, SW)
+        B_TYPE = 3'b011,   // Branch type (BEQ, BNE, etc.)
+        U_TYPE = 3'b100,   // Upper immediate type (LUI, AUIPC)
+        J_TYPE = 3'b101    // Jump type (JAL)
+    } InstrFormat_t;
+
+endpackage

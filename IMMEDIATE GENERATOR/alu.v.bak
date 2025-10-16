@@ -1,0 +1,57 @@
+module alu(
+    input  [31:0] a,        // First operand
+    input  [31:0] b,        // Second operand
+    input  [2:0]  alu_op,   // ALU operation select
+    output reg [31:0] result, // ALU result
+    output zero             // Zero flag
+);
+
+    // Combinational logic for ALU
+    always @(*) begin
+        case(alu_op)
+            3'b000: result = a + b;      // Add
+            3'b001: result = a - b;      // Subtract
+            3'b101: result = (a < b) ? 32'd1 : 32'd0; // Set less than
+            3'b011: result = a | b;      // OR
+            3'b010: result = a & b;      // AND
+            default: result = 32'd0;     // Default case
+        endcase
+    end
+
+    // Zero flag
+    assign zero = (result == 32'd0) ? 1'b1 : 1'b0;
+
+endmodule
+
+`timescale 1ns/1ps
+
+module alu_tb;
+    reg [31:0] a;
+    reg [31:0] b;
+    reg [2:0]  alu_op;
+    wire [31:0] result;
+    wire zero;
+
+    alu uut (
+        .a(a),
+        .b(b),
+        .alu_op(alu_op),
+        .result(result),
+        .zero(zero)
+    );
+
+    initial begin
+      
+        a = 32'd10; b = 32'd15; alu_op = 3'b000; #10;   // Test ADD
+        a = 32'd20; b = 32'd20; alu_op = 3'b001; #10; // Test SUB
+        a = 32'd5; b = 32'd10; alu_op = 3'b101; #10; // Test SLT (set less than)
+        a = 32'h0F0F0F0F; b = 32'hF0F0F0F0; alu_op = 3'b011; #10; // Test OR
+        a = 32'h0F0F0F0F; b = 32'hF0F0F0F0; alu_op = 3'b010; #10;  // Test AND
+        a = 32'd50; b = 32'd50; alu_op = 3'b001; #10; // Test SUB resulting in zero
+        $stop;
+    end
+
+endmodule
+
+
+

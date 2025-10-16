@@ -1,0 +1,49 @@
+`timescale 1ns/1ps
+
+module imm_extender_tb;
+
+    // Inputs
+    reg [31:0] instruction;
+    reg [1:0] ImmSrc;
+
+    // Outputs
+    wire [31:0] ImmOut;
+
+    // Instantiate DUT
+    imm_extender uut (
+        .instruction(instruction),
+        .ImmSrc(ImmSrc),
+        .ImmOut(ImmOut)
+    );
+
+    // Parameter constants (matching DUT)
+    parameter I_TYPE = 2'b00;
+    parameter S_TYPE = 2'b01;
+    parameter B_TYPE = 2'b10;
+
+    initial begin
+        // Test I-type
+        ImmSrc = I_TYPE;
+        instruction = 32'hFFF000AA;
+        #10;
+
+        // Test S-type
+        ImmSrc = S_TYPE;
+        instruction = 32'hABCDEF12;
+        #10;
+
+        // Test B-type
+        ImmSrc = B_TYPE;
+        instruction = 32'h12345678;
+        #10;
+
+        // Test negative B-type
+        ImmSrc = B_TYPE;
+        instruction = 32'hF2345678;
+        #10;
+
+        $finish;
+    end
+
+endmodule
+

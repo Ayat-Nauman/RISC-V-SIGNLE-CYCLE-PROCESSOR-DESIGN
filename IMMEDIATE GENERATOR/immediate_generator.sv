@@ -1,0 +1,23 @@
+// The 'import' statement is used to bring definitions from a package into scope.
+// Here, we are importing *everything* (indicated by the `*`) from the package `RV32I_pkg`.
+// This means all typedefs, enums, parameters, functions, or tasks declared in `RV32I_pkg`
+// can be directly used in this module without prefixing them with the package name.
+// :: tells the compiler where to look for a definition (enum, typedef etc.) inside a package or class.
+// Think of it as: <package_or_class_name>::<item_name>
+
+import immediate_generator_pkg::* ;
+
+module immediate_generator(
+input logic [31:0] in_instruction,
+input logic          [2:0] ImmSrc,
+output logic  [31:0] out_immediate
+);
+
+always_comb begin
+	case (ImmSrc) begin
+		I_TYPE: out_immediate <= in_instruction[20:31];
+	endcase // ImmSrc
+end
+
+endmodule
+
