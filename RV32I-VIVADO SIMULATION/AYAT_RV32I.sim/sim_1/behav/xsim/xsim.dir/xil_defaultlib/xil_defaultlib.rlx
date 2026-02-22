@@ -1,0 +1,19 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sim_1/new/rv32_tb.v,1771740582,verilog,,,,rv32_tb,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/CU.v,1771737367,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/adder.v,,CU,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/adder.v,1771737178,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu.v,,adder,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu.v,1771737212,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_decoder.v,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_definitions.vh,alu,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_decoder.v,1771737231,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/data_memory.v,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_definitions.vh,alu_decoder,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_definitions.vh,1771737271,verilog,,,,,,,,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/data_memory.v,1771737383,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/imm_extender.v,,data_memory,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/imm_extender.v,1771737403,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/inst_mem.v,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_definitions.vh,imm_extender,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/inst_mem.v,1771737912,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/main_decoder.v,,inst_mem,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/main_decoder.v,1771737424,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/mux.v,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_definitions.vh,main_decoder,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/mux.v,1771737436,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/pc.v,,mux,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/pc.v,1771737492,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/register_file.v,,pc,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/register_file.v,1771737504,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/rv32i.v,,register_file,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,
+C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/rv32i.v,1771740091,verilog,,C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sim_1/new/rv32_tb.v,,rv32i,,,../../../../AYAT_RV32I.srcs/sources_1/new,,,,,

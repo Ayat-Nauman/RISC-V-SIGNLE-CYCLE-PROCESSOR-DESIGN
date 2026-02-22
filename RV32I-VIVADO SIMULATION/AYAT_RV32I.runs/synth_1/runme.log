@@ -1,0 +1,427 @@
+
+*** Running vivado
+    with args -log rv32i.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rv32i.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source rv32i.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 299.828 ; gain = 70.312
+Command: synth_design -top rv32i -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 34344 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 409.527 ; gain = 96.992
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rv32i' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/rv32i.v:1]
+INFO: [Synth 8-6157] synthesizing module 'CU' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/CU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'main_decoder' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/main_decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'main_decoder' (1#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/main_decoder.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu_decoder' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu_decoder' (2#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu_decoder.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (3#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/CU.v:2]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/mux.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (4#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/mux.v:2]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/pc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (5#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/pc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/inst_mem.v:1]
+INFO: [Synth 8-3876] $readmem data file 'INSTRUCTIONS.mem' is read successfully [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/inst_mem.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (6#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/inst_mem.v:1]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/register_file.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (7#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/register_file.v:2]
+INFO: [Synth 8-6157] synthesizing module 'imm_extender' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/imm_extender.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'imm_extender' (8#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/imm_extender.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu.v:2]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/data_memory.v:1]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter DEPTH bound to: 32 - type: integer 
+WARNING: [Synth 8-4767] Trying to implement RAM 'd_mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "d_mem_reg" dissolved into registers
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (10#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/data_memory.v:1]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (11#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/adder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rv32i' (12#1) [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/rv32i.v:1]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[19]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[18]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[17]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[16]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[15]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[14]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[13]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[12]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[5]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[4]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[3]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[2]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[1]
+WARNING: [Synth 8-3331] design imm_extender has unconnected port instruction[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 464.008 ; gain = 151.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 464.008 ; gain = 151.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 464.008 ; gain = 151.473
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-5544] ROM "alucontrol" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.srcs/sources_1/new/alu.v:16]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 473.078 ; gain = 160.543
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 32    
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   4 Input     32 Bit        Muxes := 3     
+	   6 Input      9 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 28    
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 24    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input      9 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+Module alu_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+Module mux 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module inst_mem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 3     
+Module register_file 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module imm_extender 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 2     
+Module data_memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 32    
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 16    
+	   2 Input      8 Bit        Muxes := 28    
+	   2 Input      1 Bit        Muxes := 26    
+	   4 Input      1 Bit        Muxes := 8     
+	   5 Input      1 Bit        Muxes := 24    
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[31]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[30]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[29]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[28]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[27]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[26]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[25]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[24]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[23]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[22]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[21]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[20]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[19]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[18]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[17]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[16]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[15]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[14]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[13]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[12]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[11]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[10]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[9]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[8]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[7]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[6]
+WARNING: [Synth 8-3331] design data_memory has unconnected port address[5]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|inst_mem    | p_0_out    | 32x8          | LUT            | 
+|inst_mem    | p_0_out    | 32x8          | LUT            | 
+|inst_mem    | p_0_out    | 32x8          | LUT            | 
+|inst_mem    | p_0_out    | 32x8          | LUT            | 
+|rv32i       | p_0_out    | 32x8          | LUT            | 
+|rv32i       | p_0_out    | 32x8          | LUT            | 
+|rv32i       | p_0_out    | 32x8          | LUT            | 
+|rv32i       | p_0_out    | 32x8          | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object         | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------+-----------+----------------------+---------------+
+|rv32i       | dut5/registers_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+--------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------+-----------+----------------------+---------------+
+|Module Name | RTL Object         | Inference | Size (Depth x Width) | Primitives    | 
++------------+--------------------+-----------+----------------------+---------------+
+|rv32i       | dut5/registers_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++------------+--------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:27 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:28 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    11|
+|3     |LUT1   |     2|
+|4     |LUT2   |    10|
+|5     |LUT3   |    33|
+|6     |LUT4   |     9|
+|7     |LUT5   |   133|
+|8     |LUT6   |   617|
+|9     |MUXF7  |   144|
+|10    |MUXF8  |    62|
+|11    |RAM32M |    12|
+|12    |FDCE   |     5|
+|13    |FDRE   |   256|
+|14    |IBUF   |     2|
+|15    |OBUF   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |  1302|
+|2     |  dut12  |adder         |     2|
+|3     |  dut3   |pc            |   538|
+|4     |  dut5   |register_file |    44|
+|5     |  dut8   |alu           |     8|
+|6     |  dut9   |data_memory   |   702|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:28 . Memory (MB): peak = 703.176 ; gain = 390.641
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 703.176 ; gain = 390.641
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 703.176 ; gain = 390.641
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 43 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 729.539 ; gain = 429.711
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Neha Nauman Khan/AYAT_RV32I/AYAT_RV32I.runs/synth_1/rv32i.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rv32i_utilization_synth.rpt -pb rv32i_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 729.539 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Feb 22 11:56:48 2026...
