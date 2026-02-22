@@ -42,5 +42,5 @@ Vivado Device View showing logic clustering and Placement & Routing (P&R) in clo
 - **Xilinx Vivado**: FPGA Implementation & Device Mapping
 - **Venus Simulator**: Assembly to Hex Translation
 
-## 🏁 Conclusion
+## Conclusion
 The implementation successfully validates the RISC-V datapath and control logic. Waveform analysis confirms correct Read-After-Write (RAW) consistency, sign-extension, and conditional branching, achieving high hardware efficiency with a minimal resource footprint.
