@@ -1,0 +1,19 @@
+`include "alu_definitions.vh"
+
+module alu_decoder(
+    input [1:0] aluop,
+    input [2:0] funct3,
+    input [6:0] funct7,
+    output reg [2:0] alucontrol
+);
+
+always @(*) begin
+	if (aluop == 2'b01 & funct3 == 3'b000 & funct7 == 7'b0000000) alucontrol <= `ADD ; 
+   else if (aluop == 2'b01 & funct3 == 3'b000 & funct7 == 7'b0100000) alucontrol <= `SUB ;
+   else if (aluop == 2'b01 & funct3 == 3'b110 & funct7 == 7'b0000000) alucontrol <= `OR  ;
+   else if (aluop == 2'b00 )  					      alucontrol <= `ADD ; 
+   else if (aluop == 2'b10 )  					      alucontrol <= `SUB ;
+   else 							      alucontrol <= 3'bxxx;
+end
+
+endmodule

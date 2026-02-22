@@ -1,0 +1,30 @@
+`include "alu_definitions.vh"
+module alu(
+    input  [31:0] a,
+    input  [31:0] b,
+    input  [2:0]    alucontrol,
+    output reg [31 :0] result,
+    output reg zero
+);
+
+always @(*) begin
+
+// Default assignments to prevent latch infer cases and provide a known state
+    result = 'bx;
+    zero = 1'b0;
+
+case (alucontrol)
+`ADD: result = a + b;
+`SUB: result = a - b;
+`OR:  result = a | b;
+
+// default case is necessary here because unlike always_ff it can't retain its previous value
+default : result = 'bx; //using x for unhandled cases 
+endcase
+ 
+// Zero flag assignment
+zero = (result == 0);
+
+end
+
+endmodule

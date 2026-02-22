@@ -1,0 +1,46 @@
+
+`timescale 1ns/1ns
+
+module mux_tb;
+
+reg [31:0] a, b; 
+reg select_lines;
+wire [31:0] out;
+
+// DUT Instantiation
+mux dut (
+.a(a),
+.b(b),
+.select_lines(select_lines),
+.out(out) 
+);
+
+initial begin
+// considering ALU SRC MUX
+
+    // Test 1: addi x9, x0, 9 ? select immediate (b)
+    a = 32'd0; b = 32'd9; select_lines = 1'b1; #5;  
+
+    // Test 2: addi x5, x0, 5 ? select immediate (b)
+    a = 32'd0; b = 32'd5; select_lines = 1'b1; #5;  
+
+    // Test 3: sw x5, -4(x9) ? select register data (a)
+    a = 32'd5; b = 32'd0; select_lines = 1'b0; #5;  
+
+    // Test 4: lw x6, -4(x9) ? select address (b)
+    a = 32'd0; b = 32'd5; select_lines = 1'b1; #5;  
+
+    // Test 5: sw x6, 8(x9) ? select register (a)
+    a = 32'd6; b = 32'd8; select_lines = 1'b0; #5;  
+
+    // Test 6: or x4, x5, x6 ? select register (a)
+    a = 32'h00000005; b = 32'h00000006; select_lines = 1'b0; #5;  
+
+    // Test 7: beq x4, x4, L1 ? select PC+imm (b)
+    a = 32'h00000010; b = 32'h0000000C; select_lines = 1'b1; #5;  // expect out = 12
+
+
+$stop;
+end
+
+endmodule

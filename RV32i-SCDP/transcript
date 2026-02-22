@@ -1,0 +1,127 @@
+vsim -gui work.rv32_tb
+# vsim -gui work.rv32_tb 
+# Start time: 09:25:08 on Feb 22,2026
+# Loading work.rv32_tb
+# Loading work.rv32i
+# Loading work.CU
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.mux
+# Loading work.pc
+# Loading work.inst_mem
+# Loading work.register_file
+# Loading work.imm_extender
+# Loading work.alu
+# Loading work.data_memory
+# Loading work.adder
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut9'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /rv32_tb/dut/dut9 File: C:/Users/Public/MODELSIM/RV32i/rv32i.v Line: 102
+# ** Warning: (vsim-3722) C:/Users/Public/MODELSIM/RV32i/rv32i.v(102): [TFMPC] - Missing connection for port 'enable'.
+add wave -position insertpoint sim:/rv32_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ayat Nauman Khan  Hostname: AYAT  ProcessID: 4796
+#           Attempting to use alternate WLF file "./wlftb0h7i7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftb0h7i7
+run -all
+# ** Note: $stop    : C:/Users/Public/MODELSIM/RV32i/rv32_tb.v(68)
+#    Time: 110 ns  Iteration: 0  Instance: /rv32_tb
+# Break in Module rv32_tb at C:/Users/Public/MODELSIM/RV32i/rv32_tb.v line 68
+add wave -position insertpoint  \
+sim:/rv32_tb/dut/dut5/rd
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'dut9'.  Expected 6, found 5.
+#    Time: 0 ns  Iteration: 0  Instance: /rv32_tb/dut/dut9 File: C:/Users/Public/MODELSIM/RV32i/rv32i.v Line: 102
+# ** Warning: (vsim-3722) C:/Users/Public/MODELSIM/RV32i/rv32i.v(102): [TFMPC] - Missing connection for port 'enable'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Public/MODELSIM/RV32i/rv32_tb.v(68)
+#    Time: 110 ns  Iteration: 0  Instance: /rv32_tb
+# Break in Module rv32_tb at C:/Users/Public/MODELSIM/RV32i/rv32_tb.v line 68
+# Compile of data_memory.v was successful.
+# Compile of alu.v was successful.
+# Compile of alu_tb.v was successful.
+# Compile of alu_definitions.vh was successful.
+# Compile of inst_mem.v was successful.
+# Compile of inst_mem_tb.v was successful.
+# Compile of pc.v was successful.
+# Compile of pc_tb.v was successful.
+# Compile of adder.v was successful.
+# Compile of adder_tb.v was successful.
+# Compile of data_memory.v was successful.
+# Compile of data_memory_tb.v was successful.
+# Compile of CU.v was successful.
+# Compile of alu_decoder.v was successful.
+# Compile of main_decoder.v was successful.
+# Compile of CU_tb.v was successful.
+# Compile of rv32i.v was successful.
+# Compile of mux.v was successful.
+# Compile of imm_extender.v was successful.
+# Compile of imm_extender_tb.v was successful.
+# Compile of register_file.v was successful.
+# Compile of register_file_tb.v was successful.
+# Compile of rv32_tb.v was successful.
+# Compile of mux_tb.v was successful.
+# Compile of PIPELINED_PROCESSOR_TB.v failed with 1 errors.
+# 24 compiles, 1 failed with 1 error.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rv32_tb
+# Loading work.rv32i
+# Loading work.CU
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.mux
+# Loading work.pc
+# Loading work.inst_mem
+# Loading work.register_file
+# Loading work.imm_extender
+# Loading work.alu
+# Loading work.data_memory
+# Loading work.adder
+restart
+quit -sim
+# End time: 09:39:27 on Feb 22,2026, Elapsed time: 0:14:19
+# Errors: 0, Warnings: 1
+vsim -gui work.rv32_tb
+# vsim -gui work.rv32_tb 
+# Start time: 09:39:49 on Feb 22,2026
+# Loading work.rv32_tb
+# Loading work.rv32i
+# Loading work.CU
+# Loading work.main_decoder
+# Loading work.alu_decoder
+# Loading work.mux
+# Loading work.pc
+# Loading work.inst_mem
+# Loading work.register_file
+# Loading work.imm_extender
+# Loading work.alu
+# Loading work.data_memory
+# Loading work.adder
+add wave -position insertpoint sim:/rv32_tb/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ayat Nauman Khan  Hostname: AYAT  ProcessID: 4796
+#           Attempting to use alternate WLF file "./wlftmn9z49".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmn9z49
+run -all
+# ** Note: $stop    : C:/Users/Public/MODELSIM/RV32i/rv32_tb.v(68)
+#    Time: 110 ns  Iteration: 0  Instance: /rv32_tb
+# Break in Module rv32_tb at C:/Users/Public/MODELSIM/RV32i/rv32_tb.v line 68
+# Compile of data_memory.v was successful.
+# Compile of rv32i.v was successful.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rv32i
+# Loading work.data_memory
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# ** Note: $stop    : C:/Users/Public/MODELSIM/RV32i/rv32_tb.v(68)
+#    Time: 110 ns  Iteration: 0  Instance: /rv32_tb
+# Break in Module rv32_tb at C:/Users/Public/MODELSIM/RV32i/rv32_tb.v line 68

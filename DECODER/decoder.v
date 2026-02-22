@@ -1,3 +1,0 @@
-module decoder(
-	input logic 
-	);

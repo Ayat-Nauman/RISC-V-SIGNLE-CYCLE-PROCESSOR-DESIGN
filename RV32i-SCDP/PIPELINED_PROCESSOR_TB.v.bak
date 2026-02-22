@@ -1,0 +1,31 @@
+`include "RISCV_PKG.vh"
+
+`timescale 1us/1ns
+
+module PIPELINED_PROECESSOR_TB;
+wire clk, rst;
+
+//DUT instance
+PIPELINED_PROECESSOR rv32i(
+.clk(clk),
+.rst(rst)
+);
+
+//clock Generation
+always begin 
+clk = ~clk; #2;
+end
+
+initial begin
+clk = 1; rst = 1; #1;
+rst = 0; 
+#500;
+
+$stop;
+end
+
+endmodule
+
+
+
+

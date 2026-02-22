@@ -1,0 +1,635 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vadder
+Z0 !s110 1771735123
+!i10b 1
+!s100 2HCAbo<=P8C85_?affOPz1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>A[j=JoM1FYOk?[1cjinB0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/Public/MODELSIM/RV32i-SCDP
+w1760588802
+Z4 8C:/Users/Public/MODELSIM/RV32i/adder.v
+Z5 FC:/Users/Public/MODELSIM/RV32i/adder.v
+!i122 1888
+Z6 L0 2 9
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1771735123.000000
+Z9 !s107 C:/Users/Public/MODELSIM/RV32i/adder.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/adder.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vadder_tb
+Z13 !s110 1771735124
+!i10b 1
+!s100 mYRADjLU:X6E=^?9Y_6F61
+R1
+If^7e7[?f[zRE?fP9ZZ6=03
+R2
+R3
+w1760588448
+8C:/Users/Public/MODELSIM/RV32i/adder_tb.v
+FC:/Users/Public/MODELSIM/RV32i/adder_tb.v
+!i122 1889
+L0 2 16
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Public/MODELSIM/RV32i/adder_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/adder_tb.v|
+!i113 1
+R11
+R12
+valu
+Z14 !s110 1771735121
+!i10b 1
+!s100 @@zag1AFkF1m>>F@?b<DD2
+R1
+I3k21>^fMIXPFk811S2^Bj3
+R2
+R3
+w1760772551
+8C:/Users/Public/MODELSIM/RV32i/alu.v
+FC:/Users/Public/MODELSIM/RV32i/alu.v
+!i122 1882
+L0 2 28
+R7
+r1
+!s85 0
+31
+!s108 1771735120.000000
+!s107 alu_definitions.vh|C:/Users/Public/MODELSIM/RV32i/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/alu.v|
+!i113 1
+R11
+R12
+valu_decoder
+Z15 !s110 1771735125
+!i10b 1
+!s100 P52k=M?`X8=1kb5J5GY5l0
+R1
+IEBB1E=daoaWTJfGS;2HHb0
+R2
+R3
+w1760779160
+Z16 8C:/Users/Public/MODELSIM/RV32i/alu_decoder.v
+Z17 FC:/Users/Public/MODELSIM/RV32i/alu_decoder.v
+!i122 1893
+L0 3 17
+R7
+r1
+!s85 0
+31
+Z18 !s108 1771735125.000000
+!s107 alu_definitions.vh|C:/Users/Public/MODELSIM/RV32i/alu_decoder.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/alu_decoder.v|
+!i113 1
+R11
+R12
+valu_tb
+R14
+!i10b 1
+!s100 f;K4bgz`0_dc?EllHiNRT0
+R1
+ISjgf<[KD76_fK2TSj3GiJ0
+R2
+R3
+w1760774161
+8C:/Users/Public/MODELSIM/RV32i/alu_tb.v
+FC:/Users/Public/MODELSIM/RV32i/alu_tb.v
+!i122 1883
+L0 5 29
+R7
+r1
+!s85 0
+31
+!s108 1771735121.000000
+!s107 alu_definitions.vh|C:/Users/Public/MODELSIM/RV32i/alu_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/alu_tb.v|
+!i113 1
+R11
+R12
+vALUControl
+!s110 1760594532
+!i10b 1
+!s100 S_92kb4HRQ`A[9^VG>`R=0
+R1
+IWL6TbjF=U8=0VgoD74:J81
+R2
+Z20 dC:/Users/Public/MODELSIM/RV32i
+w1760592586
+R16
+R17
+!i122 167
+L0 3 60
+R7
+r1
+!s85 0
+31
+!s108 1760594532.000000
+!s107 ALU_definitions.vh|C:/Users/Public/MODELSIM/RV32i/alu_decoder.v|
+R19
+!i113 1
+R11
+R12
+n@a@l@u@control
+vCU
+R15
+!i10b 1
+!s100 mFka7ZYEHzC;jFSn3@CmW1
+R1
+Ig0k=4c[<jTLeAKiP[5H?31
+R2
+R3
+w1760774684
+8C:/Users/Public/MODELSIM/RV32i/CU.v
+FC:/Users/Public/MODELSIM/RV32i/CU.v
+!i122 1892
+L0 2 33
+R7
+r1
+!s85 0
+31
+Z21 !s108 1771735124.000000
+!s107 C:/Users/Public/MODELSIM/RV32i/CU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/CU.v|
+!i113 1
+R11
+R12
+n@c@u
+vCU_tb
+!s110 1771735126
+!i10b 1
+!s100 KAAm:DO2Z3:T@UO[82N0@1
+R1
+IG8D?9:oi]=>H[IA=S7l9I2
+R2
+R3
+w1760778004
+8C:/Users/Public/MODELSIM/RV32i/CU_tb.v
+FC:/Users/Public/MODELSIM/RV32i/CU_tb.v
+!i122 1895
+L0 3 52
+R7
+r1
+!s85 0
+31
+Z22 !s108 1771735126.000000
+!s107 alu_definitions.vh|C:/Users/Public/MODELSIM/RV32i/CU_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/CU_tb.v|
+!i113 1
+R11
+R12
+n@c@u_tb
+vdata_memory
+!s110 1771735360
+!i10b 1
+!s100 3T;NJN8K0;X;1d`=Q51d^3
+R1
+Ik9Mm]b4[P_0]`fE[NN5`41
+R2
+R3
+w1771735337
+Z23 8C:/Users/Public/MODELSIM/RV32i/data_memory.v
+Z24 FC:/Users/Public/MODELSIM/RV32i/data_memory.v
+!i122 1904
+Z25 L0 1 19
+R7
+r1
+!s85 0
+31
+!s108 1771735359.000000
+Z26 !s107 C:/Users/Public/MODELSIM/RV32i/data_memory.v|
+Z27 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/data_memory.v|
+!i113 1
+R11
+R12
+vdata_memory_tb
+R13
+!i10b 1
+!s100 60>Z`HcK26;h`o6_::XPD2
+R1
+IUi`Ul]RUJ<j8XIzRh]^]f0
+R2
+R3
+w1760791254
+Z28 8C:/Users/Public/MODELSIM/RV32i/data_memory_tb.v
+Z29 FC:/Users/Public/MODELSIM/RV32i/data_memory_tb.v
+!i122 1891
+L0 2 42
+R7
+r1
+!s85 0
+31
+R21
+Z30 !s107 C:/Users/Public/MODELSIM/RV32i/data_memory_tb.v|
+Z31 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/data_memory_tb.v|
+!i113 1
+R11
+R12
+vdatamem
+Z32 !s110 1760588619
+!i10b 1
+!s100 UmP`m7Q::kon1nP;oiNCD0
+R1
+Ia=N8?<iUV0Lf48M>DOQ[A0
+R2
+R20
+w1760588528
+R23
+R24
+!i122 10
+L0 4 24
+R7
+r1
+!s85 0
+31
+Z33 !s108 1760588619.000000
+R26
+R27
+!i113 1
+R11
+R12
+vdatamem_tb
+R32
+!i10b 1
+!s100 :KY7D5G`X6WY4a<BoQlkE2
+R1
+IDMJzG1PTZaHae>dJR_0i>2
+R2
+R20
+w1760588597
+R28
+R29
+!i122 11
+Z34 L0 4 43
+R7
+r1
+!s85 0
+31
+R33
+R30
+R31
+!i113 1
+R11
+R12
+vimm_extender
+Z35 !s110 1771735127
+!i10b 1
+!s100 d<fAm:YO7>mcHc7jAQ6_T3
+R1
+I3Co28F_WVIaT9zFZ691B80
+R2
+R3
+w1760782328
+8C:/Users/Public/MODELSIM/RV32i/imm_extender.v
+FC:/Users/Public/MODELSIM/RV32i/imm_extender.v
+!i122 1898
+L0 3 16
+R7
+r1
+!s85 0
+31
+Z36 !s108 1771735127.000000
+!s107 alu_definitions.vh|C:/Users/Public/MODELSIM/RV32i/imm_extender.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/imm_extender.v|
+!i113 1
+R11
+R12
+vimm_extender_tb
+R35
+!i10b 1
+!s100 7]@Z?dC@SFa<z>`RJNc;b0
+R1
+IKMI8ab2K=Ao7zI5:5Ph>Q2
+R2
+R3
+w1760785128
+8C:/Users/Public/MODELSIM/RV32i/imm_extender_tb.v
+FC:/Users/Public/MODELSIM/RV32i/imm_extender_tb.v
+!i122 1899
+L0 4 39
+R7
+r1
+!s85 0
+31
+R36
+!s107 alu_definitions.vh|C:/Users/Public/MODELSIM/RV32i/imm_extender_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/imm_extender_tb.v|
+!i113 1
+R11
+R12
+vinst_mem
+Z37 !s110 1771735122
+!i10b 1
+!s100 IPSc<X2JkLS:Rjd6b=5dJ1
+R1
+IPC=hSnBgUfLdg4<_<@mUZ2
+R2
+R3
+w1763564246
+8C:/Users/Public/MODELSIM/RV32i/inst_mem.v
+FC:/Users/Public/MODELSIM/RV32i/inst_mem.v
+!i122 1884
+L0 1 14
+R7
+r1
+!s85 0
+31
+Z38 !s108 1771735122.000000
+!s107 C:/Users/Public/MODELSIM/RV32i/inst_mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/inst_mem.v|
+!i113 1
+R11
+R12
+vinst_mem_tb
+R37
+!i10b 1
+!s100 =3]ReFm4;>P3l^`b6GM9[0
+R1
+I^b=cdMQI6GCFiYO`CWhdJ0
+R2
+R3
+w1760799330
+Z39 8C:/Users/Public/MODELSIM/RV32i/inst_mem_tb.v
+Z40 FC:/Users/Public/MODELSIM/RV32i/inst_mem_tb.v
+!i122 1885
+R25
+R7
+r1
+!s85 0
+31
+R38
+Z41 !s107 C:/Users/Public/MODELSIM/RV32i/inst_mem_tb.v|
+Z42 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/inst_mem_tb.v|
+!i113 1
+R11
+R12
+vinstmem_tb
+Z43 !s110 1760588618
+!i10b 1
+!s100 >oKUNYmX]H9_[[YDaNG_M1
+R1
+Ib1Gb4lPKF5ARJfKk?_T7o2
+R2
+R20
+w1760588108
+R39
+R40
+!i122 5
+L0 1 13
+R7
+r1
+!s85 0
+31
+Z44 !s108 1760588618.000000
+R41
+R42
+!i113 1
+R11
+R12
+vmain_decoder
+R15
+!i10b 1
+!s100 QC>8AZ5nLW>F>G`NZ;9=G3
+R1
+I_4iWW`f4HQJakA]S?fUOI0
+R2
+R3
+w1760779005
+8C:/Users/Public/MODELSIM/RV32i/main_decoder.v
+FC:/Users/Public/MODELSIM/RV32i/main_decoder.v
+!i122 1894
+L0 3 20
+R7
+r1
+!s85 0
+31
+R18
+!s107 alu_definitions.vh|C:/Users/Public/MODELSIM/RV32i/main_decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/main_decoder.v|
+!i113 1
+R11
+R12
+vmux
+R35
+!i10b 1
+!s100 Fd7o@OXBRJOzSPeQIoPS23
+R1
+IG78aVD]HR7]MUmi]To[UO0
+R2
+R3
+w1760680110
+8C:/Users/Public/MODELSIM/RV32i/mux.v
+FC:/Users/Public/MODELSIM/RV32i/mux.v
+!i122 1897
+R6
+R7
+r1
+!s85 0
+31
+R22
+!s107 C:/Users/Public/MODELSIM/RV32i/mux.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/mux.v|
+!i113 1
+R11
+R12
+vmux_tb
+!s110 1771735129
+!i10b 1
+!s100 `leL=`nGKOEfILfD9F]Xk3
+R1
+IoQeTZilTd2[hdXT`Fc_UR0
+R2
+R3
+w1760799865
+8C:/Users/Public/MODELSIM/RV32i/mux_tb.v
+FC:/Users/Public/MODELSIM/RV32i/mux_tb.v
+!i122 1903
+R34
+R7
+r1
+!s85 0
+31
+Z45 !s108 1771735128.000000
+!s107 C:/Users/Public/MODELSIM/RV32i/mux_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/mux_tb.v|
+!i113 1
+R11
+R12
+vpc
+R0
+!i10b 1
+!s100 DcJ0E8JQLOaH_4Ak?6haI1
+R1
+Ih_QzPLUaHF_5;]2a2;HGd1
+R2
+R3
+w1760588164
+8C:/Users/Public/MODELSIM/RV32i/pc.v
+FC:/Users/Public/MODELSIM/RV32i/pc.v
+!i122 1886
+L0 1 15
+R7
+r1
+!s85 0
+31
+R38
+!s107 C:/Users/Public/MODELSIM/RV32i/pc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/pc.v|
+!i113 1
+R11
+R12
+vpc_adder
+R43
+!i10b 1
+!s100 MR[2C1jUBjhYeoafObF`73
+R1
+IjN?iEjNLQ0Sb=3FfW2KLV3
+R2
+R20
+w1760588259
+R4
+R5
+!i122 8
+R6
+R7
+r1
+!s85 0
+31
+R44
+R9
+R10
+!i113 1
+R11
+R12
+vpc_tb
+R0
+!i10b 1
+!s100 kB3T<EgcE29`Q]D[j4W7:2
+R1
+Iem`9XnDPc7bOjo4XE[3No1
+R2
+R3
+w1760800344
+8C:/Users/Public/MODELSIM/RV32i/pc_tb.v
+FC:/Users/Public/MODELSIM/RV32i/pc_tb.v
+!i122 1887
+L0 2 50
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Public/MODELSIM/RV32i/pc_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/pc_tb.v|
+!i113 1
+R11
+R12
+vregister_file
+Z46 !s110 1771735128
+!i10b 1
+!s100 ?oOP_BkA7<9jA4l7_k92A2
+R1
+IPcAhhHIoYCQ?>QL<b^?nV2
+R2
+R3
+w1760845638
+8C:/Users/Public/MODELSIM/RV32i/register_file.v
+FC:/Users/Public/MODELSIM/RV32i/register_file.v
+!i122 1900
+L0 2 44
+R7
+r1
+!s85 0
+31
+R36
+!s107 C:/Users/Public/MODELSIM/RV32i/register_file.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/register_file.v|
+!i113 1
+R11
+R12
+vregister_file_tb
+R46
+!i10b 1
+!s100 ]Zk_hn<0M8eS39fXMgC942
+R1
+In23WQ99fiE4dfN[SE]_Fg3
+R2
+R3
+w1763267390
+8C:/Users/Public/MODELSIM/RV32i/register_file_tb.v
+FC:/Users/Public/MODELSIM/RV32i/register_file_tb.v
+!i122 1901
+L0 2 130
+R7
+r1
+!s85 0
+31
+R45
+!s107 C:/Users/Public/MODELSIM/RV32i/register_file_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/register_file_tb.v|
+!i113 1
+R11
+R12
+vrv32_tb
+R46
+!i10b 1
+!s100 aiB<ahGWMm`RzPRfk6]481
+R1
+Ih^X;zYPJ07ElkRk?9WU8G1
+R2
+R3
+w1763567018
+8C:/Users/Public/MODELSIM/RV32i/rv32_tb.v
+FC:/Users/Public/MODELSIM/RV32i/rv32_tb.v
+!i122 1902
+L0 4 68
+R7
+r1
+!s85 0
+31
+R45
+!s107 C:/Users/Public/MODELSIM/RV32i/rv32_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/rv32_tb.v|
+!i113 1
+R11
+R12
+vrv32i
+!s110 1771735368
+!i10b 1
+!s100 i[eRHXc8>j5]HbP_ho;Xj0
+R1
+IBX^LNmD0WRoicZ_7`cJ]V3
+R2
+R3
+w1760815374
+8C:/Users/Public/MODELSIM/RV32i/rv32i.v
+FC:/Users/Public/MODELSIM/RV32i/rv32i.v
+!i122 1905
+L0 1 132
+R7
+r1
+!s85 0
+31
+!s108 1771735368.000000
+!s107 C:/Users/Public/MODELSIM/RV32i/rv32i.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Public/MODELSIM/RV32i/rv32i.v|
+!i113 1
+R11
+R12

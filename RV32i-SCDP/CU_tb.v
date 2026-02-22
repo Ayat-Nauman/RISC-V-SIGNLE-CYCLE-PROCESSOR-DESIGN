@@ -1,0 +1,55 @@
+`include "alu_definitions.vh"
+
+module CU_tb;
+
+reg zero;
+reg [6:0]opcode;
+reg [2:0]funct3;
+reg [6:0]funct7;
+wire [2:0] alucontrol;
+wire [1:0] immsrc;
+wire resultsrc,memwrite,alusrc,regwrite,pcsrc;
+
+//DUT Instance
+CU cu(
+.opcode(opcode),
+.zero(zero),
+.funct3(funct3),
+.funct7(funct7),
+.alucontrol(alucontrol),
+.immsrc(immsrc),
+.resultsrc(resultsrc), 
+.memwrite(memwrite),
+.alusrc(alusrc),
+.regwrite(regwrite),
+.pcsrc(pcsrc)
+);
+
+
+initial begin
+// ADDI x9, x0, 9   ? I-type (ADD operation)
+zero = 0; opcode = `ADDI;  funct3 = 3'b000; funct7 = 7'b0000000; #5;  // ADDI (add x9, x0, 9)
+
+// ADDI x5, x0, 5   ? I-type (ADD operation)
+zero = 0; opcode = `ADDI;  funct3 = 3'b000; funct7 = 7'b0000000; #5;  // ADDI (add x5, x0, 5)
+
+// SW x5, -4(x9)   ? S-type (SW ? address calc ADD)
+zero = 0; opcode = `SW_TYPE; funct3 = 3'b010; funct7 = 7'b0000000; #5;  // SW (store word)
+
+// LW x6, -4(x9)   ? I-type (LW ? address calc ADD)
+zero = 0; opcode = `LW_TYPE; funct3 = 3'b010; funct7 = 7'b0000000; #5;  // LW (load word)
+
+// SW x6, 8(x9)   ? S-type (SW ? address calc ADD)
+zero = 0; opcode = `SW_TYPE; funct3 = 3'b010; funct7 = 7'b0000000; #5;  // SW (store word)
+
+// OR x4, x5, x6   ? R-type (funct3=110, funct7=0000000 ? OR)
+zero = 0; opcode = `R_TYPE;  funct3 = 3'b110; funct7 = 7'b0000000; #5;  // OR (R-type)
+
+// BEQ x4, x4, L1  ? B-type (funct3=000 ? BEQ ? SUB in ALU)
+zero = 1; opcode = `SB_TYPE; funct3 = 3'b000; funct7 = 7'b0000000; #5;  // BEQ (branch equal)
+
+$stop;
+
+end
+endmodule
+

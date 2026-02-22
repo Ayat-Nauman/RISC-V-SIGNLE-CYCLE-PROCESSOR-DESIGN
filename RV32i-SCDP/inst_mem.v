@@ -1,0 +1,15 @@
+module inst_mem(
+
+input [31:0] address,
+output [31:0] instruction
+);
+
+reg [7:0] i_mem [32:0];
+
+initial begin
+    $readmemh("INSTRUCTIONS.hex", i_mem);
+end 
+
+assign instruction = {i_mem[address+3], i_mem[address+2], i_mem[address+1], i_mem[address]};
+
+endmodule
